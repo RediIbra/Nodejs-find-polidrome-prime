@@ -43,4 +43,14 @@ describe("postNumbers controller", () => {
       error: "You cant put numbers equal to 0 or less",
     });
   });
+
+  it("When it is an empty array", async () => {
+    mockRequest.body.numbers = [];
+    await postNumbers(mockRequest as Request, mockResponse as Response);
+
+    expect(mockResponse.status).toHaveBeenCalledWith(400);
+    expect(mockResponse.json).toHaveBeenCalledWith({
+      error: "Please insert at least one number",
+    });
+  });
 });

@@ -1,6 +1,6 @@
 # Nodejs-find-polidrome-prime
 
-----------PROJECT DESCRIPTION
+##PROJECT DESCRIPTION<br>
 Node.js application with typescript also added error handling for each situation and prevented it for inserting strings (for sql injection for demo purposes because we don't have to build queries in this project).
 
 - I have added some comments so you can understand the code.

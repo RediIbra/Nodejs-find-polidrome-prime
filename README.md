@@ -26,4 +26,6 @@
 
 ### RUN UNIT TESTING
 - In terminal run the command ===>__npm test__ <br>
+
+## THANK YOU <br>
 ![4iLw261NYmI75Vfek2tOjV7zsGVZzXAgp5GhSD0k2tE](https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif)

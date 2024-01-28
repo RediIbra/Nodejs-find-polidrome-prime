@@ -1,14 +1,20 @@
 import { Request, Response, NextFunction } from "express";
-import { filterNumbers } from "../utils/filterNumbers";
+import { filterNumbers, areAllNumbers } from "../utils/filterNumbers";
 import { ExtendedRequest } from "../app";
 
 export const postNumbers = async (req: ExtendedRequest, res: Response) => {
   const startTime: Date =
     req.startTime instanceof Date ? req.startTime : new Date();
   const numbers = req.body.numbers;
+  const checkForString = areAllNumbers(numbers);
   const hasZeroOrLess = numbers.some((num: number) => num <= 0);
+
+  //Check if it is empty
   if (!numbers.length) {
     res.status(400).json({ error: "Please insert at least one number" });
+  } else if (!checkForString) {
+    //Check if the array contain strings also you cant put sring to make SQL injections
+    res.status(400).json({ error: "Please put only numbers" });
   } else if (!hasZeroOrLess && numbers.length) {
     try {
       const min = Math.min(...numbers);

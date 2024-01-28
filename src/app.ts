@@ -8,11 +8,10 @@ const app = express();
 export interface ExtendedRequest extends Request {
   startTime?: Date;
 }
-// Body parser, reading data from body into req.body
+
 app.use(json());
 // Set security HTTP headers
 app.use(helmet());
-
 // Development logging
 app.use(morgan("dev"));
 
@@ -22,7 +21,7 @@ const logTimeMiddleware = (
   next: NextFunction
 ) => {
   req.startTime = new Date();
-  next(); // Pass control to the next middleware or route handler
+  next();
 };
 
 app.use("/api/v1", logTimeMiddleware, palindromeRoutes);

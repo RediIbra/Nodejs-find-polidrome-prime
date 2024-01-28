@@ -25,3 +25,6 @@ export function filterNumbers(arr: any[], feature: string) {
     }
   });
 }
+export function areAllNumbers(arr: any[]): boolean {
+  return arr.every((element) => typeof element === "number");
+}

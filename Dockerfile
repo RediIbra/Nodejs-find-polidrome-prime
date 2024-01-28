@@ -7,7 +7,7 @@ COPY . /app
 RUN npm install
 
 
-EXPOSE 3000
-# required for docker desktop port mapping
+EXPOSE 7007
+
 
 CMD ["npm", "start"]

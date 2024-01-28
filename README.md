@@ -22,8 +22,9 @@
 
 ### RUN DOCKER
 1. Run this comand ===> __docker build -t nodeapp .__<br>
-2. To run the project on docker container run this comand ===> __docker run -p 7007:7007 nodeapp__<br>
-
+2. To run the project on docker container run this comand ===> __docker run --name nodeapp_c -p 7007:7007 nodeapp__ <br>
+3. If you want to stop the container ===> __docker stop nodeapp_c__ (optimal) <br>
+4. Remove the container ===> __docker rm nodeapp_c__ (optimal)
 ### RUN UNIT TESTING
 - In terminal run the command ===>__npm test__ <br>
 

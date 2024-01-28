@@ -25,4 +25,5 @@
 2. To run the project on docker container run this comand ===> __docker run -p 3000:3000 nodeapp__<br>
 
 ### RUN UNIT TESTING
-- In terminal run the command ===>__npm test__
+- In terminal run the command ===>__npm test__ <br>
+![4iLw261NYmI75Vfek2tOjV7zsGVZzXAgp5GhSD0k2tE](https://github.com/RediIbra/Nodejs-find-polidrome-prime/assets/51862776/610b0305-0ef2-461f-873f-b84c0a722950)

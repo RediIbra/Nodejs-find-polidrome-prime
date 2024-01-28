@@ -16,13 +16,13 @@
 - Added jest.config.js to configure the Unit testing
 
 ### RUN PROJECT
-1.To install node modules ===> npm install<br>
-2.Run this command to active watcher mode in typescript ===> tsc -w <br>
-3.Run the project ===> npm start<br>
+1.To install node modules ===> __npm install__<br>
+2.Run this command to active watcher mode in typescript ===> __tsc -w__ <br>
+3.Run the project ===> __npm start__<br>
 
 ### RUN DOCKER
 1.Run this comand ===> __docker build -t nodeapp .__<br>
 2.To run the project on docker container run this comand ===> __docker run -p 3000:3000 nodeapp__<br>
 
 ### RUN UNIT TESTING
-- In terminal run the command ===>npm test
+- In terminal run the command ===>__npm test__

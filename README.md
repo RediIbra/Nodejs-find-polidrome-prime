@@ -21,8 +21,8 @@
 3.Run the project ===> npm start<br>
 
 ### RUN DOCKER
-1.Run this comand ===> docker build -t nodeapp .<br>
-2.To run the project on docker container run this comand ===> docker run -p 3000:3000 nodeapp<br>
+1.Run this comand ===> __docker build -t nodeapp .__<br>
+2.To run the project on docker container run this comand ===> __docker run -p 3000:3000 nodeapp__<br>
 
 ### RUN UNIT TESTING
--In terminal run the command ===>npm test
+- In terminal run the command ===>npm test

@@ -1,7 +1,7 @@
 # Nodejs-find-polidrome-prime
 
 ### PROJECT DESCRIPTION<br>
-- Node.js application with __Typescript__ also added error handling for each situation and prevented it for inserting strings (for sql injection for demo purposes because we don't have to build queries in this project).
+- Node.js application with __Typescript__ also added error handling for each situation and prevented it for inserting strings.
 
 - URL of the API __"localhost:7007/api/v1/findPalindrome"__ so you can test on Postman
 
